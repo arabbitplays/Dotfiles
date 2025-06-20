@@ -1,0 +1,7 @@
+2025/06/16 18:35:34 logger.go:19: ERROR: Error decoding JSON for custom_theme.json. Try creating this file manually instead. Err: EOF
+2025/06/16 18:35:54 logger.go:19: ERROR: Error decoding JSON for custom_theme.json. Try creating this file manually instead. Err: EOF
+2025/06/16 18:36:28 logger.go:19: ERROR: Error decoding JSON for custom_theme.json. Try creating this file manually instead. Err: EOF
+2025/06/16 18:36:33 logger.go:19: ERROR: Error decoding JSON for custom_theme.json. Try creating this file manually instead. Err: EOF
+2025/06/16 18:37:08 logger.go:19: ERROR: Error decoding JSON for custom_theme.json. Try creating this file manually instead. Err: EOF
+2025/06/16 18:39:01 logger.go:19: ERROR: Error decoding JSON for custom_theme.json. Try creating this file manually instead. Err: EOF
+2025/06/16 18:39:12 logger.go:19: ERROR: Error decoding JSON for custom_theme.json. Try creating this file manually instead. Err: EOF
