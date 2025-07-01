@@ -17,10 +17,10 @@ ZSH_THEME=jnrowe
 
 source $ZSH/oh-my-zsh.sh
 
-alias nb="sudo nixos-rebuild switch --flake ~/Resources/Nixos-System#nixos"
+alias nb="sudo nixos-rebuild switch --flake ~/.nixos#nixos"
 alias nd="nix develop .#default"
 
-alias nedit="code ~/Resources/Nixos-System"
+alias nedit="code ~/.nixos"
 alias cedit="code ~/.config"
 
 alias ga="git add ."
