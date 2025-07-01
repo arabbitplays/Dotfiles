@@ -20,3 +20,6 @@ if [ $? = 0 ]; then
 fi;
 config checkout
 config config status.showUntrackedFiles no
+
+# Copy hardware configuration to the right place
+cp ~/etc/nixos/hardware-configuration.nix" .nixos/hardware-configuration

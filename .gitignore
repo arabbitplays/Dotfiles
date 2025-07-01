@@ -1,1 +1,6 @@
 .cfg/
+
+.nixos/flake.lock
+.nixos/hardware-configuration.nix
+
+.config/clipse/clipboard_history.json
