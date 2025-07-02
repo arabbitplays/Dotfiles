@@ -15,7 +15,8 @@ while true; do
     fi
 
     # Select a random wallpaper from the array
-    wallpaperIndex=$(( RANDOM % ${#wallpapers[@]} ))
+    wallpaperIndex=$(( RANDOM % ${#wallpapers[@    wallpaperIndex=$(( RANDOM % ${#wallpapers[@]} ))
+]} ))
     selectedWallpaper="${wallpapers[$wallpaperIndex]}"
 
     # Update the wallpaper using the swww img command

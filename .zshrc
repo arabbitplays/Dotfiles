@@ -29,4 +29,4 @@ alias gp="git push"
 alias greset="git reset --hard HEAD"
 
 alias config="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
-alias sync="~/.setup_scripts/sync.sh"
+alias sync="~/.install/sync.sh"
