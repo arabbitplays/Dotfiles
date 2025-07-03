@@ -132,3 +132,6 @@
 2025/07/03 22:17:50 logger.go:19: ERROR: invalid character '<' looking for beginning of value
 2025/07/03 22:19:39 logger.go:19: ERROR: invalid character '<' looking for beginning of value
 2025/07/03 22:19:50 logger.go:19: ERROR: invalid character '<' looking for beginning of value
+2025/07/03 22:29:12 logger.go:19: ERROR: invalid character '<' looking for beginning of value
+2025/07/03 22:29:14 logger.go:19: ERROR: invalid character '<' looking for beginning of value
+2025/07/03 22:30:21 logger.go:19: ERROR: invalid character '<' looking for beginning of value

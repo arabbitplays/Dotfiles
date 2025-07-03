@@ -19,4 +19,4 @@ hyprctl dispatch workspace 11
 hyprctl dispatch workspace 21
 hyprctl dispatch workspace 31
 
-nix-index &
+# nix-index &
