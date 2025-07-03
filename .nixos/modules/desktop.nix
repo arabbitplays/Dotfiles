@@ -87,4 +87,22 @@
             pkgs.nix-index # used to find nix packages
         ];
     };
+
+    let
+        rofiThemes = pkgs.fetchGit {
+            url = "https://github.com/adi1090x/rofi";
+            rev = "3cf3fbc8ffb7c19e33e4bba3bbfa4eae978872cf"; # pinned commit
+        };
+    in
+    {
+        environment.systemPackages = [ pkgs.rofi ];
+
+        # Option 1: Symlink rofi themes into /usr/share/rofi (or similar)
+        environment.etc."rofi-themes".source = "${rofiThemes}/themes";
+
+        # Option 2: Or write a small wrapper script that uses ROFI_THEME_DIR
+        environment.etc."rofi-theme-env".text = ''
+            export ROFI_THEME_DIR="${rofiThemes}/themes"
+        '';
+    }
 }

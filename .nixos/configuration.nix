@@ -27,6 +27,8 @@
   };
   nix.settings.auto-optimise-store = true;
 
+  
+
   hypr-desktop.enable = true;
 
   networking.hostName = "nixos"; # Define your hostname.
