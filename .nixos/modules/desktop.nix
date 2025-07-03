@@ -37,7 +37,7 @@
         environment.systemPackages = with pkgs; [
             kitty # terminal emulator (for hyprland)
             rofi-wayland # launcher
-            nemo # filemanager
+            kdePackages.dolphin # filemanager
             (waybar.overrideAttrs (oldAttrs: {
             mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
             })) # desktop bar
