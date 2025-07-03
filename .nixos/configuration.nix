@@ -112,6 +112,7 @@
     libreoffice
     spotify
     qalculate-qt
+    
   ];
 
   fonts.packages = with pkgs; [

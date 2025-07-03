@@ -4,8 +4,14 @@
     programs.zsh.enable = true;
     users.defaultUserShell = pkgs.zsh;
 
-    programs.zsh.ohMyZsh = {
-        enable = true;
-        # plugins = [ "git" "sudo" "docker" "kubectl" ];
+    environment.systemPackages = with pkgs; [
+        zinit # zsh plugin manager
+        jq # command line json processor
+        fzf # fuzzy finder
+        zoxide # better cd
+    ];
+
+    environment.variables = {
+        ZINIT_HOME = "${pkgs.zinit}/share/zinit";
     };
 }
