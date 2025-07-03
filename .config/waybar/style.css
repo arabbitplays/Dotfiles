@@ -29,8 +29,8 @@ window#waybar {
   background-color: #cdd6f4;
 }
 
-#workspaces button.active {
-  background-color: #1e1e2e;
+#custom-workspaces {
+  /*background-color: #1e1e2e;*/
   color: #89b4fa;
 }
 
@@ -39,6 +39,7 @@ window#waybar {
   color: #f38ba8;
 }
 
+#custom-workspaces,
 #clock,
 #pulseaudio,
 #custom-logo,

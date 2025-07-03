@@ -57,6 +57,7 @@
             zip
             unzip
             xdg-utils # desktop integration for the command line
+            jq # command line json processor
         ];
     };
 }
