@@ -5,3 +5,16 @@
 2025/06/16 18:37:08 logger.go:19: ERROR: Error decoding JSON for custom_theme.json. Try creating this file manually instead. Err: EOF
 2025/06/16 18:39:01 logger.go:19: ERROR: Error decoding JSON for custom_theme.json. Try creating this file manually instead. Err: EOF
 2025/06/16 18:39:12 logger.go:19: ERROR: Error decoding JSON for custom_theme.json. Try creating this file manually instead. Err: EOF
+2025/07/03 17:08:09 logger.go:19: ERROR: invalid character '<' looking for beginning of value
+2025/07/03 17:08:11 logger.go:19: ERROR: invalid character '<' looking for beginning of value
+2025/07/03 17:08:18 logger.go:19: ERROR: invalid character '<' looking for beginning of value
+2025/07/03 17:14:15 logger.go:19: ERROR: invalid character '<' looking for beginning of value
+2025/07/03 17:14:48 logger.go:19: ERROR: invalid character '<' looking for beginning of value
+2025/07/03 17:14:49 logger.go:19: ERROR: invalid character '<' looking for beginning of value
+2025/07/03 17:15:27 logger.go:19: ERROR: invalid character '<' looking for beginning of value
+2025/07/03 17:15:44 logger.go:19: ERROR: invalid character '<' looking for beginning of value
+2025/07/03 17:15:45 logger.go:19: ERROR: invalid character '<' looking for beginning of value
+2025/07/03 17:16:42 logger.go:19: ERROR: invalid character '<' looking for beginning of value
+2025/07/03 17:19:42 logger.go:19: ERROR: invalid character '<' looking for beginning of value
+2025/07/03 17:20:21 logger.go:19: ERROR: invalid character '<' looking for beginning of value
+2025/07/03 17:21:15 logger.go:19: ERROR: invalid character '<' looking for beginning of value
