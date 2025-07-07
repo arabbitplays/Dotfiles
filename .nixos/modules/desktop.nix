@@ -34,7 +34,7 @@
             nvidia.modesetting.enable = true;
         };
 
-         hardware.nvidia = {
+        hardware.nvidia = {
             # Nvidia power management. Experimental, and can cause sleep/suspend to fail.
             # Enable this if you have graphical corruption issues or application crashes after waking
             # up from sleep. This fixes it by saving the entire VRAM memory to /tmp/ instead 
@@ -43,7 +43,7 @@
 
             # Fine-grained power management. Turns off GPU when not in use.
             # Experimental and only works on modern Nvidia GPUs (Turing or newer).
-            #powerManagement.finegrained = false;
+            powerManagement.finegrained = false;
 
             # Use the NVidia open source kernel module (not to be confused with the
             # independent third-party "nouveau" open source driver).
@@ -58,13 +58,14 @@
             nvidiaSettings = true;
 
             # Optionally, you may need to select the appropriate driver version for your specific GPU.
-            package = config.boot.kernelPackages.nvidiaPackages.stable;
+            package = config.boot.kernelPackages.nvidiaPackages.latest;
         };
 
         environment.systemPackages = with pkgs; [
             kitty # terminal emulator (for hyprland)
             rofi-wayland # launcher
             kdePackages.dolphin # filemanager
+            nemo
             (waybar.overrideAttrs (oldAttrs: {
             mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
             })) # desktop bar
@@ -85,24 +86,9 @@
             unzip
             xdg-utils # desktop integration for the command line
             pkgs.nix-index # used to find nix packages
+            htop # process viewer
+            #ntfs3g # file system support
+            #exfat # file system support
         ];
     };
-
-    let
-        rofiThemes = pkgs.fetchGit {
-            url = "https://github.com/adi1090x/rofi";
-            rev = "3cf3fbc8ffb7c19e33e4bba3bbfa4eae978872cf"; # pinned commit
-        };
-    in
-    {
-        environment.systemPackages = [ pkgs.rofi ];
-
-        # Option 1: Symlink rofi themes into /usr/share/rofi (or similar)
-        environment.etc."rofi-themes".source = "${rofiThemes}/themes";
-
-        # Option 2: Or write a small wrapper script that uses ROFI_THEME_DIR
-        environment.etc."rofi-theme-env".text = ''
-            export ROFI_THEME_DIR="${rofiThemes}/themes"
-        '';
-    }
 }
