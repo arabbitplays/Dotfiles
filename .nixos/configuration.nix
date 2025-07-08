@@ -7,6 +7,7 @@
       ./modules/desktop.nix
       ./modules/users.nix
       ./modules/shell.nix
+      ./modules/steam.nix
     ];
 
   # Bootloader.

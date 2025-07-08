@@ -4,6 +4,10 @@
 wallpapersDir="$HOME/.config/hypr/Wallpapers"
 vertWallpapersDir="$HOME/.config/hypr/VerticalWallpapers"
 
+# laptop
+eDP_1_horizontal=1
+
+# desktop
 DP_2_horizontal=1
 HDMI_A_3_horizontal=1
 HDMI_A_4_horizontal=0
@@ -43,13 +47,14 @@ show_rng_img_on_monitor() {
 
 # Start an infinite loop
 while true; do
+    show_rng_img_on_monitor $eDP_1_horizontal eDP-1
+
     show_rng_img_on_monitor $DP_2_horizontal DP-2
     show_rng_img_on_monitor $HDMI_A_3_horizontal HDMI-A-3
     show_rng_img_on_monitor $HDMI_A_4_horizontal HDMI-A-4
-
+    
     # Remove the selected wallpaper from the array
     #unset "wallpapers[$wallpaperIndex]"
 
-    # Delay for 2 hours before selecting the next wallpaper
     sleep 1h
 done
