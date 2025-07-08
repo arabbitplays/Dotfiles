@@ -14,14 +14,31 @@
             wayland = true;
         };
 
-        # Enable the Cinnamon Desktop Environment.
-        #services.xserver.displayManager.lightdm.enable = true;
-        #services.xserver.desktopManager.cinnamon.enable = true;
+        # auto mounting of usb drives
+        services.gvfs.enable = true;
+        services.udisks2.enable = true;
 
         programs.hyprland = {
             enable = true;
             xwayland.enable = true;
         };
+
+        # default applications for the file manager
+        #xdg.portal = {
+        #    enable = true;
+        #    config = {
+        #        hyprland = {
+        #            default = [
+        #                "hyprland"
+        #                "kde"
+        #            ];
+        #        };
+        #    };
+        #    configPackages = with pkgs; [
+        #        xdg-desktop-portal-hyprland
+        #        kdePackages.xdg-desktop-portal-kde
+        #    ];
+        #};
         
         environment.sessionVariables = {
             WLR_NO_HARDWARE_CURSORS = "1";
@@ -64,8 +81,7 @@
         environment.systemPackages = with pkgs; [
             kitty # terminal emulator (for hyprland)
             rofi-wayland # launcher
-            kdePackages.dolphin # filemanager
-            nemo
+            nemo # file manager
             (waybar.overrideAttrs (oldAttrs: {
             mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
             })) # desktop bar
@@ -89,6 +105,10 @@
             htop # process viewer
             #ntfs3g # file system support
             #exfat # file system support
+            usbutils # usb drive utils
+            udiskie # disk auto mounter
+            udisks # stuff for disk manipulation
+            jmtpfs # phone files access
         ];
     };
 }
