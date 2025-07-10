@@ -13,7 +13,7 @@ waybar &
 dunst &
 
 swww-daemon &
-~/.config/hypr/swww-rotating.sh &
+~/.config/hypr/scripts/swww-rotating.sh &
 
 hyprctl dispatch workspace 11
 hyprctl dispatch workspace 21
