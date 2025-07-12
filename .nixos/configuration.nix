@@ -112,6 +112,7 @@
     thunderbird
     discord
     mattermost
+    signal-desktop
     libreoffice
     spotify
     qalculate-qt

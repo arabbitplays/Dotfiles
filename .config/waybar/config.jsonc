@@ -8,14 +8,13 @@
   "passthrough": false,
   "fixed-center": true,
   "modules-left": ["custom/workspaces", "hyprland/window"],
-  "modules-center": ["mpris"],
+  "modules-center": ["clock#simpleclock", "clock"],
   "modules-right": [
+    "mpris",
     "battery",
     "cpu",
     "memory",
     "pulseaudio",
-    "clock",
-    "clock#simpleclock",
     "tray",
     "custom/notification",
     "custom/power",
@@ -109,7 +108,7 @@
   "custom/power": {
     "tooltip": false,
     "on-click": "wlogout -p layer-shell &",
-    "format": "⏻",
+    "format": "⏻ ",
   },
   "custom/notification": {
     "escape": true,
