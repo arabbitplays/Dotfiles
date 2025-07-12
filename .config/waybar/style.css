@@ -57,6 +57,14 @@ window#waybar {
     margin: 5px 5px;
     padding: 1px 1px 1px 6px;
 }
+#window#waybar.empty #window {
+  background-color: transparent;
+}
+#tooltip {
+  background-color: rgba(0,43,51,0.85);
+  border: 2px solid #cba6f7;
+}
+
 /*-----Indicators----*/
 #idle_inhibitor.activated {
     color: #2dcc36;
