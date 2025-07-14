@@ -4,4 +4,5 @@
 .nixos/hardware-configuration.nix
 
 .config/clipse/clipboard_history.json
-.config/clise/clipse.log
+.config/clipse/clipse.log
+-config/clipse/tmp_files/
