@@ -33,11 +33,11 @@ show_rng_img_on_monitor() {
   if [[ $is_horizontal -eq 1 ]]; then
     wallpaperIndex=$(( RANDOM % ${#wallpapers[@]} ))
     selectedWallpaper="${wallpapers[$wallpaperIndex]}"
-    swww img "$selectedWallpaper" --transition-type outer --transition-pos top-right -o $monitor_name
+    swww img "$selectedWallpaper" --transition-type outer --transition-pos top-right -o $monitor_name --resize crop
   elif [[ $is_horizontal -eq 0 ]]; then
     wallpaperIndex=$(( RANDOM % ${#vertWallpapers[@]} ))
     selectedWallpaper="${vertWallpapers[$wallpaperIndex]}"
-    swww img "$selectedWallpaper" --transition-type outer --transition-pos top-right -o $monitor_name
+    swww img "$selectedWallpaper" --transition-type outer --transition-pos top-right -o $monitor_name --resize crop
   else
     echo "Invalid boolean value. Please provide 1 for true or 0 for false."
   fi
