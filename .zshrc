@@ -77,4 +77,4 @@ alias greset="git reset --hard HEAD"
 alias config="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias sync="~/.install/sync.sh"
 
-
+alias mcstatus="systemctl status minecraft-server.service"
