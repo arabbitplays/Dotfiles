@@ -63,7 +63,7 @@ setopt hist_find_no_dups
 # Aliases
 alias ls="ls --color"
 
-alias nb="sudo nixos-rebuild switch --flake ~/.nixos#nixos"
+alias nb="sudo nixos-rebuild switch --flake ~/.nixos#laptop"
 alias nd="nix develop .#default"
 
 alias nedit="code ~/.nixos"

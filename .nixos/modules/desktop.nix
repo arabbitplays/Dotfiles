@@ -23,6 +23,10 @@
             xwayland.enable = true;
         };
 
+        # Desktop portal for link opening, screensharing, ...
+        xdg.portal.enable = true;
+        xdg.portal.extraPortals = [ pkgs.xdg-desktop-portal-gtk ];
+
         # default applications for the file manager
         #xdg.portal = {
         #    enable = true;
@@ -109,6 +113,8 @@
             udiskie # disk auto mounter
             udisks # stuff for disk manipulation
             jmtpfs # phone files access
+            qalculate-qt # calculator
+            libreoffice
         ];
     };
 }

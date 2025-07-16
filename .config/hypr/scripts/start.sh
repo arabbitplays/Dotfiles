@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+~/.config/hypr/scripts/file-switcher.sh
+
 lxqt-policykit-agent &
 
 clipse -listen
