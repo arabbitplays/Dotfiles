@@ -18,6 +18,10 @@ in
   hypr-desktop.enable = true;
   networking.hostName = lib.mkForce "nix-laptop"; # Override your hostname.
   
+    environment.systemPackages = with pkgs; [
+        libresprite
+    ];
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
