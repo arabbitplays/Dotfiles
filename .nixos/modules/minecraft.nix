@@ -13,6 +13,7 @@
 
         serverProperties = {
             gamemode = "creative";
+            level-seed = "7445395903252703439";
         };
 
         whitelist = {
