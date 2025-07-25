@@ -55,6 +55,8 @@
             nvidia.modesetting.enable = true;
         };
 
+        services.xserver.videoDrivers = ["nvidia"];
+
         hardware.nvidia = {
             # Nvidia power management. Experimental, and can cause sleep/suspend to fail.
             # Enable this if you have graphical corruption issues or application crashes after waking
@@ -64,7 +66,7 @@
 
             # Fine-grained power management. Turns off GPU when not in use.
             # Experimental and only works on modern Nvidia GPUs (Turing or newer).
-            powerManagement.finegrained = true;
+            powerManagement.finegrained = false;
 
             # Use the NVidia open source kernel module (not to be confused with the
             # independent third-party "nouveau" open source driver).
@@ -107,6 +109,7 @@
             xdg-utils # desktop integration for the command line
             pkgs.nix-index # used to find nix packages
             btop # process viewer
+            zenith-nvidia
             #ntfs3g # file system support
             #exfat # file system support
             usbutils # usb drive utils
