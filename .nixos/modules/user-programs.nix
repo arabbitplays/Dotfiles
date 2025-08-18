@@ -15,6 +15,7 @@
         signal-desktop
         spotify
         prismlauncher
+        scribus
     ];
 
     fonts.packages = with pkgs; [
