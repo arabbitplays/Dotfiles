@@ -19,7 +19,6 @@ in
   networking.hostName = lib.mkForce "nix-laptop"; # Override your hostname.
   
     environment.systemPackages = with pkgs; [
-        libresprite
     ];
 
   # Some programs need SUID wrappers, can be configured further or are

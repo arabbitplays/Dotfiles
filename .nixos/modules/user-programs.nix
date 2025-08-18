@@ -15,6 +15,7 @@
         signal-desktop
         spotify
         prismlauncher
+        libresprite
     ];
 
     fonts.packages = with pkgs; [
