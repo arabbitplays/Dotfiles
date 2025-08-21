@@ -15,6 +15,7 @@
         spotify
         prismlauncher
         scribus
+        libresprite
     ];
 
     fonts.packages = with pkgs; [
