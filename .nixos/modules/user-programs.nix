@@ -16,10 +16,14 @@
         spotify
         prismlauncher
         scribus
+        opentabletdriver
+        krita
     ];
 
     fonts.packages = with pkgs; [
         lexend
         nerd-fonts.zed-mono
+        montserrat
+        texlivePackages.playfair
     ];
 }
