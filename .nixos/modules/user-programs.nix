@@ -11,13 +11,16 @@
         obsidian
         thunderbird
         discord
-        mattermost
         signal-desktop
         spotify
         prismlauncher
         scribus
+<<<<<<< HEAD
         opentabletdriver
         krita
+=======
+        libresprite
+>>>>>>> 0d5e14a144102a2f06c8c65f9a2377d8a603a88b
     ];
 
     fonts.packages = with pkgs; [
