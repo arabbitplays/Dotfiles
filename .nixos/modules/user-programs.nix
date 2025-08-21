@@ -11,7 +11,6 @@
         obsidian
         thunderbird
         discord
-        mattermost
         signal-desktop
         spotify
         prismlauncher
