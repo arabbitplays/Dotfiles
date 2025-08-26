@@ -15,6 +15,7 @@
     "cpu",
     "memory",
     "pulseaudio",
+    "backlight",
     "tray",
     "custom/notification",
     "custom/power",
@@ -100,6 +101,10 @@
       "default": [" ", " ", " "],
     },
     "on-click": "pavucontrol",
+  },
+  "backlight": {
+    "format": "{icon}  {percent}%",
+    "format-icons": ["", ""]
   },
   "custom/sep": {
     "format": "|",

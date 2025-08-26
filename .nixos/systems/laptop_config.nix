@@ -43,6 +43,7 @@ in
 
 
   environment.systemPackages = with pkgs; [
+    anki
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
