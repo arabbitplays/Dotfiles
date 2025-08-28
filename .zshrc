@@ -67,6 +67,8 @@ alias nbl="sudo nixos-rebuild switch --flake ~/.nixos#laptop"
 alias nbd="sudo nixos-rebuild switch --flake ~/.nixos#desktop"
 alias nd="nix develop .#default"
 
+alias flake="~/Resources/Flakes/flake_selector.sh"
+
 alias cl="~/.install/clion.sh"
 
 alias nedit="code ~/.nixos"
