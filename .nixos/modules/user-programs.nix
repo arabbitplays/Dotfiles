@@ -18,6 +18,7 @@
         opentabletdriver
         krita
         libresprite
+        cowsay
     ];
 
     fonts.packages = with pkgs; [
