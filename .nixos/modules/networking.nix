@@ -19,4 +19,8 @@
     networking.firewall.allowedUDPPorts = [ 25565 ];
     # Or disable the firewall altogether.
     #networking.firewall.enable = false;
+
+    environment.systemPackages = with pkgs; [
+        openvpn
+    ];
 }
