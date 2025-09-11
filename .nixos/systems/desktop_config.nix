@@ -20,6 +20,12 @@ in
   hypr-desktop.enable = true;
   networking.hostName = lib.mkForce "nix-desktop"; # Override your hostname.
 
+  environment.systemPackages = with pkgs; [
+    cudaPackages.cudatoolkit
+    cudaPackages.cuda_nvml_dev
+    cudaPackages.nsight_systems
+  ];
+
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
   # programs.mtr.enable = true;
