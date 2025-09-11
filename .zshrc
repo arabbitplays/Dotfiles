@@ -65,6 +65,7 @@ alias ls="ls --color"
 
 alias nbl="sudo nixos-rebuild switch --flake ~/.nixos#laptop"
 alias nbd="sudo nixos-rebuild switch --flake ~/.nixos#desktop"
+alias nu="sudo nix flake update --flake ~/.nixos"
 alias nd="nix develop .#default"
 
 alias flake="~/Resources/Flakes/flake_selector.sh"
