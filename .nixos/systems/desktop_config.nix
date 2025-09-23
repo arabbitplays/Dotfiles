@@ -24,6 +24,7 @@ in
     cudaPackages.cudatoolkit
     cudaPackages.cuda_nvml_dev
     cudaPackages.nsight_systems
+    obs-studio
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

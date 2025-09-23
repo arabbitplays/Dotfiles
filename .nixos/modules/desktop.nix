@@ -73,7 +73,7 @@
             # supported GPUs is at: 
             # https://github.com/NVIDIA/open-gpu-kernel-modules#compatible-gpus 
             # Only available from driver 515.43.04+
-            open = false;
+            open = true;
 
             # Enable the Nvidia settings menu,
             # accessible via `nvidia-settings`.
@@ -101,6 +101,7 @@
             wtype # needed for autopasting
             clipse  # clipboard manager
             qimgv # image viewer
+            mpv # media player
             brightnessctl # controll brigthness
             pavucontrol # audio controllcd
             zip

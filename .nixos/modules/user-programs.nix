@@ -7,6 +7,9 @@
     environment.systemPackages = with pkgs; [
         git
         jetbrains.clion
+        linuxPackages_latest.perf
+        perf-tools
+        tracy
         vscode
         obsidian
         thunderbird
@@ -18,7 +21,7 @@
         opentabletdriver
         krita
         libresprite
-        cowsay
+        obs-studio
     ];
 
     fonts.packages = with pkgs; [
@@ -27,4 +30,10 @@
         montserrat
         texlivePackages.playfair
     ];
+
+    # allow perf to collect information without root priviledges
+    boot.kernel.sysctl = {
+        "kernel.perf_event_paranoid" = 1;
+        "kernel.kptr_restrict" = 0;
+    };
 }
