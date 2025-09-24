@@ -2,8 +2,8 @@
 command="$1"
 
 # Define monitors (physical displays) and the number of virtual workspaces per monitor.
-monitors=("DP-2" "HDMI-A-3" "HDMI-A-4")
-#monitors=("eDP-1")
+#monitors=("DP-2" "HDMI-A-3" "HDMI-A-4")
+monitors=("eDP-1")
 
 # Define wallpapers array (one per virtual workspace).
 wallpapers=(
