@@ -8,6 +8,7 @@ in
         [ # Include the results of the hardware scan.
         ../hardware-configuration.nix
         "${module_dir}/base.nix"
+        "${module_dir}/bluetooth.nix"
         "${module_dir}/desktop.nix"
         "${module_dir}/users.nix"
         "${module_dir}/shell.nix"
@@ -24,7 +25,6 @@ in
     cudaPackages.cudatoolkit
     cudaPackages.cuda_nvml_dev
     cudaPackages.nsight_systems
-    obs-studio
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

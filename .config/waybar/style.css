@@ -35,6 +35,7 @@ window#waybar {
 #memory,
 #temperature,
 #network,
+#bluetooth,
 #pulseaudio,
 #backlight,
 #mpris,
