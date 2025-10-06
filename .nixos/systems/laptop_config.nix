@@ -8,6 +8,7 @@ in
       ../hardware-configuration.nix
       "${module_dir}/base.nix"
       "${module_dir}/desktop.nix"
+      "${module_dir}/bluetooth.nix"
       "${module_dir}/users.nix"
       "${module_dir}/shell.nix"
       "${module_dir}/steam.nix"
