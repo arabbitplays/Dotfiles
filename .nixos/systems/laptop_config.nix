@@ -14,7 +14,11 @@ in
       "${module_dir}/steam.nix"
       "${module_dir}/user-programs.nix"
       "${module_dir}/networking.nix"
+
+      "${module_dir}/areas.nix"    
       ];
+
+  musicModule.enable = true;
 
   hypr-desktop.enable = true;
   networking.hostName = lib.mkForce "nix-laptop"; # Override your hostname.

@@ -18,9 +18,6 @@
         spotify
         prismlauncher
         scribus
-        opentabletdriver
-        krita
-        libresprite
         obs-studio
     ];
 

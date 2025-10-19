@@ -16,6 +16,7 @@ in
         "${module_dir}/networking.nix"
         "${module_dir}/user-programs.nix"
         "${module_dir}/minecraft.nix"
+        "${module_dir}/areas.nix"    
         ];
 
   hypr-desktop.enable = true;
