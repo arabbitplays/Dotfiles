@@ -93,6 +93,7 @@
             dunst # notification deamon
             libnotify # notify dependency
             swww # wallpaper manager
+            (callPackage ./lwp.nix {}) # layered wallpaper engine
             lxqt.lxqt-policykit # authenticaton manager for polkit
             networkmanagerapplet
             wlogout # logout manager

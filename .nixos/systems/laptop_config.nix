@@ -15,11 +15,13 @@ in
       "${module_dir}/user-programs.nix"
       "${module_dir}/networking.nix"
 
-      "${module_dir}/areas.nix"    
+      "${module_dir}/areas.nix" 
+      "${module_dir}/selfhosting.nix"          
       ];
 
   musicModule.enable = true;
-
+  postgresModule.enable = true;
+  
   hypr-desktop.enable = true;
   networking.hostName = lib.mkForce "nix-laptop"; # Override your hostname.
 

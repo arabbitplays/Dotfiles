@@ -80,6 +80,9 @@ alias gc="git commit -m"
 alias gp="git push"
 alias greset="git reset --hard HEAD"
 
+alias cmbd="cmake --build --preset debug"
+alias cmbr="cmake --build --preset release"
+
 alias config="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
 alias sync="~/.install/sync.sh"
 
