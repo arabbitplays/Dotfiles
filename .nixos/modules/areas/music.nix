@@ -17,7 +17,7 @@ in
 
         environment.systemPackages = with pkgs; [
             vital # wavetable synth
-            cowsay
+            mixxx # mix software
         ];
     };
 }

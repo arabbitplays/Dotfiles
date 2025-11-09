@@ -20,6 +20,7 @@
         prismlauncher
         scribus
         obs-studio
+        binutils # objdump and co
     ];
 
     fonts.packages = with pkgs; [
