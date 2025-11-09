@@ -71,6 +71,7 @@ alias nd="nix develop .#default"
 alias flake="~/Resources/Flakes/flake_selector.sh"
 
 alias cl="~/.install/clion.sh"
+alias pyc="~/.install/pycharm.sh"
 
 alias nedit="code ~/.nixos"
 alias cedit="code ~/.config"

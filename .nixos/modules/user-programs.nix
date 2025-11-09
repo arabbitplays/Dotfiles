@@ -8,7 +8,7 @@
         git
         jetbrains.clion
         jetbrains.pycharm-community
-        linuxPackages_latest.perf
+        perf
         perf-tools
         tracy
         vscode
