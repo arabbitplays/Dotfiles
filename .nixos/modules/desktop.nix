@@ -85,7 +85,7 @@
 
         environment.systemPackages = with pkgs; [
             kitty # terminal emulator (for hyprland)
-            rofi-wayland # launcher
+            rofi # launcher
             nemo # file manager
             (waybar.overrideAttrs (oldAttrs: {
             mesonFlags = oldAttrs.mesonFlags ++ [ "-Dexperimental=true" ];
