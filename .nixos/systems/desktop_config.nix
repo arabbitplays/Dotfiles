@@ -19,6 +19,7 @@ in
         "${module_dir}/areas.nix"    
         ];
 
+  musicModule.enable = true;
   hypr-desktop.enable = true;
   networking.hostName = lib.mkForce "nix-desktop"; # Override your hostname.
 
