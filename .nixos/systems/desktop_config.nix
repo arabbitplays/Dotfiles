@@ -16,17 +16,21 @@ in
         "${module_dir}/networking.nix"
         "${module_dir}/user-programs.nix"
         "${module_dir}/minecraft.nix"
+
         "${module_dir}/areas.nix"    
+        "${module_dir}/selfhosting.nix"          
         ];
 
   musicModule.enable = true;
+  artModule.enable = true;
+  postgresModule.enable = true;
+
   hypr-desktop.enable = true;
   networking.hostName = lib.mkForce "nix-desktop"; # Override your hostname.
 
   environment.systemPackages = with pkgs; [
-    cudaPackages.cudatoolkit
-    cudaPackages.cuda_nvml_dev
-    cudaPackages.nsight_systems
+    jetbrains.webstorm
+    jetbrains.idea-community
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
