@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 command="$1"
 
-# Define monitors (physical displays) and the number of virtual workspaces per monitor.
-#monitors=("DP-2" "HDMI-A-3" "HDMI-A-4")
-monitors=("eDP-1")
+# Define monitors (physical displays)
+SCRIPT_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")" &>/dev/null && pwd)"
+source $SCRIPT_DIR/monitor_names.sh
 
 # Define wallpapers array (one per virtual workspace).
 wallpapers=(
