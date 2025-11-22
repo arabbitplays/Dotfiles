@@ -6,6 +6,7 @@ in
 {
     imports =
     [ 
+        "${area_dir}/programming.nix"
         "${area_dir}/art.nix"    
         "${area_dir}/music.nix"
     ];

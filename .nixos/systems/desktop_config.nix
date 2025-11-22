@@ -21,6 +21,7 @@ in
         "${module_dir}/selfhosting.nix"          
         ];
 
+  programmingModule.enable = true;
   musicModule.enable = true;
   artModule.enable = true;
   postgresModule.enable = true;

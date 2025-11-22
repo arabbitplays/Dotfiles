@@ -5,13 +5,7 @@
     #services.onedrive.enable = true;
 
     environment.systemPackages = with pkgs; [
-        git
-        jetbrains.clion
-        jetbrains.pycharm-community
-        perf
-        perf-tools
-        tracy
-        vscode
+    
         obsidian
         thunderbird
         discord
