@@ -1,4 +1,4 @@
-{ config, lib, pkgs, ... }:
+{ config, lib, pkgs, inputs, ... }:
 
 let
     cfg = config.programmingModule;
@@ -24,9 +24,9 @@ in
             tracy
             gcc
             vscode
-            neovim
-            ripgrep # better grep used by the neovim setup
-            vimPlugins.lazy-nvim
+            #neovim
+            #ripgrep # better grep used by the neovim setup
+            #vimPlugins.lazy-nvim
         ];
     };
 }

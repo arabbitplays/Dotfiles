@@ -1,4 +1,4 @@
-{ lib, config, pkgs, ... }:
+{ lib, config, pkgs, inputs, ... }:
 let
     module_dir = ../modules;
 in
@@ -51,7 +51,8 @@ in
 
 
   environment.systemPackages = with pkgs; [
-    anki
+    anki   
+    inputs.nvim-flake.packages.${system}.nvim     
   ];
 
   # Some programs need SUID wrappers, can be configured further or are
