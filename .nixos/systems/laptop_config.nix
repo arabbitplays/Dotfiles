@@ -14,9 +14,10 @@ in
       "${module_dir}/steam.nix"
       "${module_dir}/user-programs.nix"
       "${module_dir}/networking.nix"
+      "${module_dir}/nixcats.nix"
 
       "${module_dir}/areas.nix" 
-      "${module_dir}/selfhosting.nix"          
+      "${module_dir}/selfhosting.nix"       
       ];
 
   programmingModule.enable = true;
@@ -52,8 +53,8 @@ in
 
   environment.systemPackages = with pkgs; [
     anki   
-    inputs.nvim-flake.packages.${system}.nvim     
   ];
+  nixCats.enable = true;
 
   # Some programs need SUID wrappers, can be configured further or are
   # started in user sessions.
