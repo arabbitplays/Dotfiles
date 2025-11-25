@@ -31,6 +31,8 @@ in {
             clang-tools # clangd lsp
             lua-language-server
             ripgrep
+            fd
+            lazygit
           ];
         };
         startupPlugins = {
@@ -40,6 +42,8 @@ in {
             nvim-treesitter.withAllGrammars # syntax highlighting
             nvim-lspconfig # lsp configuration 
             tokyonight-nvim # color scheme
+            mini-icons
+            nvim-web-devicons
             nvim-cmp
             luasnip
             cmp-nvim-lsp
@@ -50,6 +54,8 @@ in {
             neo-tree-nvim # file explorer
             nvim-autopairs # pairing brackets etc.
             bufferline-nvim # buffer bar at the top
+            lualine-nvim # status line at the bottom
+            toggleterm-nvim # terminal
           ];
           # themer = with pkgs; [
           #   # you can even make subcategories based on categories and settings sets!

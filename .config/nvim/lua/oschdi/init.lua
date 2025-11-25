@@ -9,6 +9,8 @@ require("oschdi.plugins.which-key")
 require("oschdi.plugins.neotree")
 require("oschdi.plugins.autopairs")
 require("oschdi.plugins.bufferline")
+require("oschdi.plugins.lualine")
+require("oschdi.plugins.toggleterm")
 
 -- require("oschdi.lazy_init")
 require("oschdi.set")
