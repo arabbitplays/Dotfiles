@@ -56,6 +56,7 @@ in {
             bufferline-nvim # buffer bar at the top
             lualine-nvim # status line at the bottom
             toggleterm-nvim # terminal
+            indent-blankline-nvim # indent line markers
           ];
           # themer = with pkgs; [
           #   # you can even make subcategories based on categories and settings sets!

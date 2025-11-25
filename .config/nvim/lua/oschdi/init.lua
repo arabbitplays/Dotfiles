@@ -11,6 +11,7 @@ require("oschdi.plugins.autopairs")
 require("oschdi.plugins.bufferline")
 require("oschdi.plugins.lualine")
 require("oschdi.plugins.toggleterm")
+require("oschdi.plugins.indent-lines")
 
 -- require("oschdi.lazy_init")
 require("oschdi.set")
