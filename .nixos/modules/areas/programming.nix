@@ -24,9 +24,6 @@ in
             tracy
             gcc
             vscode
-            #neovim
-            #ripgrep # better grep used by the neovim setup
-            #vimPlugins.lazy-nvim
         ];
     };
 }

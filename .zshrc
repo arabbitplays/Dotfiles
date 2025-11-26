@@ -63,8 +63,8 @@ setopt hist_find_no_dups
 # Aliases
 alias ls="ls --color"
 
-alias nbl="sudo nixos-rebuild switch --flake ~/.nixos#laptop"
-alias nbd="sudo nixos-rebuild switch --flake ~/.nixos#desktop"
+alias nbl="sudo nixos-rebuild switch --flake ~/.nixos#laptop --impure"
+alias nbd="sudo nixos-rebuild switch --flake ~/.nixos#desktop --impure"
 alias nu="sudo nix flake update --flake ~/.nixos"
 alias nd="nix develop .#default"
 
@@ -89,3 +89,5 @@ alias sync="~/.install/sync.sh"
 
 alias mcstatus="systemctl status minecraft-server.service"
 alias vpn="sudo openvpn --config Resources/kit.ovpn "
+alias avpn="sudo openvpn --config Resources/kit-vpn2vlan.ovpn"
+alias gamify="~/Projects/Gamify-Life/buildDir/GamifyLife --config ~/Projects/Gamify-Life/resources/config.yaml"
