@@ -8,7 +8,7 @@
 
     config = lib.mkIf config.hypr-desktop.enable {
         # Enable the X11 windowing system.
-        #services.xserver.enable = true;
+        services.xserver.enable = true;
         services.displayManager.gdm = {
             enable = true;
             wayland = true;
