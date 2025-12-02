@@ -14,7 +14,7 @@
         prismlauncher
         scribus
         obs-studio
-        binutils # objdump and co
+        drawio
     ];
 
     fonts.packages = with pkgs; [
