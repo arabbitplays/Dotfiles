@@ -73,8 +73,8 @@ alias flake="~/Resources/Flakes/flake_selector.sh"
 alias cl="~/.install/clion.sh"
 alias pyc="~/.install/pycharm.sh"
 
-alias nedit="code ~/.nixos"
-alias cedit="code ~/.config"
+alias nedit="nvim ~/.nixos"
+alias cedit="nvim ~/.config"
 
 alias ga="git add ."
 alias gc="git commit -m"
