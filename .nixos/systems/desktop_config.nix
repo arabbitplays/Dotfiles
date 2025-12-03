@@ -15,7 +15,6 @@ in
         "${module_dir}/steam.nix"
         "${module_dir}/networking.nix"
         "${module_dir}/user-programs.nix"
-        "${module_dir}/minecraft.nix"
         "${module_dir}/nixcats.nix"
 
         "${module_dir}/areas.nix"    
@@ -25,7 +24,9 @@ in
   programmingModule.enable = true;
   musicModule.enable = true;
   artModule.enable = true;
+
   postgresModule.enable = true;
+  dockerModule.enable = true;
 
   hypr-desktop.enable = true;
   networking.hostName = lib.mkForce "nix-desktop"; # Override your hostname.
@@ -33,6 +34,7 @@ in
   environment.systemPackages = with pkgs; [
     jetbrains.webstorm
     jetbrains.idea-community
+    mongodb-compass
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

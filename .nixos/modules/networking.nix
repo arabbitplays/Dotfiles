@@ -18,6 +18,8 @@
     networking.firewall.allowedTCPPorts = [ 
         25565 # minecraft server
         57621 # spotify
+        8080
+        8081
     ];
     networking.firewall.allowedUDPPorts = [ 
         25565  # minecraft server

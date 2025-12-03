@@ -91,3 +91,7 @@ alias mcstatus="systemctl status minecraft-server.service"
 alias vpn="sudo openvpn --config Resources/kit.ovpn "
 alias avpn="sudo openvpn --config Resources/kit-vpn2vlan.ovpn"
 alias gamify="~/Projects/Gamify-Life/buildDir/GamifyLife --config ~/Projects/Gamify-Life/resources/config.yaml"
+
+alias dps="docker ps -a"
+alias dcu="docker compose up"
+alias dcd="docker compose down"
