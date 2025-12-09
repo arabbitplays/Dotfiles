@@ -111,6 +111,7 @@
             pkgs.nix-index # used to find nix packages
             btop # process viewer
             zenith-nvidia
+            alsa-utils # utils for sound hardware
             #ntfs3g # file system support
             #exfat # file system support
             usbutils # usb drive utils

@@ -15,7 +15,6 @@
         scribus
         obs-studio
         drawio
-        alsa-utils
     ];
 
     fonts.packages = with pkgs; [
