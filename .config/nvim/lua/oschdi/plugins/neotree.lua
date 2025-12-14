@@ -10,9 +10,9 @@ require('neo-tree').setup({
     window = {
         mappings = {
             o = function(state)
-                local node = state.tree.get_node()
+                local node = state.tree:get_node()
                 local path = node.path
-                vim.fn.jobstart({ "xdg-open". path }, { detach = true })
+                vim.fn.jobstart({ "xdg-open", path }, { detach = true })
             end,
         },
     },

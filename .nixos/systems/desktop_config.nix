@@ -27,6 +27,7 @@ in
 
   postgresModule.enable = true;
   dockerModule.enable = true;
+  minecraftModule.enable = true;
 
   hypr-desktop.enable = true;
   networking.hostName = lib.mkForce "nix-desktop"; # Override your hostname.
