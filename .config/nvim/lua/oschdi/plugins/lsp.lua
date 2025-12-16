@@ -29,7 +29,14 @@ servers.lua_ls = {
 --  define the property 'filetypes' to the map in question.
 --  You may do the same thing with cmd
  
-servers.clangd = {}
+servers.clangd = {
+  cmd = {
+    "clangd",
+    "--query-driver=**",
+    "--background-index",
+    "--clang-tidy",
+  },
+}
 
 local function on_attach(_, bufnr)
 -- we create a function that lets us more easily define mappings specific

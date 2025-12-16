@@ -61,6 +61,8 @@ setopt hist_ignore_dups
 setopt hist_find_no_dups
 
 # Aliases
+alias reload="kill -SIGUSR1 $(pgrep kitty)"
+
 alias ls="ls --color"
 
 alias nbl="sudo nixos-rebuild switch --flake ~/.nixos#laptop --impure"

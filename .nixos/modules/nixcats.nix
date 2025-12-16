@@ -42,6 +42,7 @@ in {
             nvim-treesitter.withAllGrammars # syntax highlighting
             nvim-lspconfig # lsp configuration 
             tokyonight-nvim # color scheme
+            gruvbox-nvim
             mini-icons
             nvim-web-devicons
             nvim-cmp

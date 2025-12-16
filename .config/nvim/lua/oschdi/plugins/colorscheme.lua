@@ -14,3 +14,9 @@ require("tokyonight").setup({
     floats = "dark",               -- style for floating windows
   },
 })
+
+require("gruvbox").setup({
+    terminal_colors = true,
+    transparent_mode = true,
+    inverse = true
+})
