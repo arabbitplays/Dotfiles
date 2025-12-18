@@ -5,7 +5,6 @@
     #services.onedrive.enable = true;
 
     environment.systemPackages = with pkgs; [
-    
         obsidian
         thunderbird
         discord
@@ -15,6 +14,8 @@
         scribus
         obs-studio
         drawio
+        cmatrix
+        pipes
     ];
 
     fonts.packages = with pkgs; [
