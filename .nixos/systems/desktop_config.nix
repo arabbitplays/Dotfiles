@@ -2,6 +2,7 @@
 
 let
     module_dir = ../modules;
+    desktopManager = import ../services/desktop_manager.nix { inherit pkgs; };
 in
 {
     imports =
@@ -21,7 +22,8 @@ in
         "${module_dir}/selfhosting.nix"          
         ];
 
-  programmingModule.enable = true;
+
+    programmingModule.enable = true;
   musicModule.enable = true;
   artModule.enable = true;
 
@@ -36,6 +38,7 @@ in
     jetbrains.webstorm
     jetbrains.idea-community
     mongodb-compass
+    desktopManager
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

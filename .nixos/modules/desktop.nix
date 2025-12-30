@@ -83,6 +83,7 @@
             package = config.boot.kernelPackages.nvidiaPackages.stable;
         };
 
+
         environment.systemPackages = with pkgs; [
             kitty # terminal emulator (for hyprland)
             rofi # launcher
