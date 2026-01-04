@@ -20,3 +20,42 @@ require("gruvbox").setup({
     transparent_mode = true,
     inverse = true
 })
+
+local theme_file = vim.fn.expand("~/.config/nvim/current-theme")
+
+local theme_map = {
+  tokyo = "tokyonight-storm",
+  forest = "gruvbox",
+}
+
+local function apply_theme()
+  local f = io.open(theme_file, "r")
+  if not f then
+    return
+  end
+
+  local theme = f:read("*l")
+  f:close()
+
+  local colorscheme = theme_map[theme]
+  if colorscheme then
+    vim.cmd.colorscheme(colorscheme)
+  end
+end
+
+-- Apply on startup
+apply_theme()
+
+
+local uv = vim.loop
+local theme_watcher = nil
+
+local function watch_theme_file()
+  theme_watcher = uv.new_fs_event()
+  theme_watcher:start(theme_file, {}, vim.schedule_wrap(function()
+    apply_theme()
+  end))
+end
+
+watch_theme_file()
+

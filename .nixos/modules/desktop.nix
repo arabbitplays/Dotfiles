@@ -1,4 +1,4 @@
-{ lib, config, pkgs, ... }:
+{ inputs, lib, config, pkgs, ... }:
 
 {
     options = {
@@ -83,6 +83,25 @@
             package = config.boot.kernelPackages.nvidiaPackages.stable;
         };
 
+        systemd.user.services.desktop-manager = {
+            description = "Desktop Manager Daemon";
+
+            wantedBy = [ "default.target" ];
+            after = [ "graphical-session.target" ];
+
+            serviceConfig = {
+                ExecStart = "${inputs.desktop-manager.packages.${pkgs.stdenv.hostPlatform.system}.desktop-manager}/bin/DesktopManager";
+                Restart = "always";
+                RestartSec = 2;
+                RuntimeDirectory = "desktop-manager";
+
+                Environment = ''
+                    PATH=/run/current-system/sw/bin:/run/current-system/sw/sbin:/usr/bin:/bin:${pkgs.coreutils}/bin
+                    XDG_RUNTIME_DIR=${builtins.getEnv "XDG_RUNTIME_DIR"}
+                    WAYLAND_DISPLAY=${builtins.getEnv "WAYLAND_DISPLAY"}
+                '';
+            };
+        };
 
         environment.systemPackages = with pkgs; [
             kitty # terminal emulator (for hyprland)
@@ -121,6 +140,7 @@
             jmtpfs # phone files access
             qalculate-qt # calculator
             libreoffice
+            inputs.desktop-manager-cli.packages.${pkgs.stdenv.hostPlatform.system}.desktop-manager-cli
         ];
     };
 }

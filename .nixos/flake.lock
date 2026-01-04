@@ -5,16 +5,34 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1767551931,
-        "narHash": "sha256-GTsDoIogDbMhzKUGYkENAuGcnxqWP//vodij7vDKAh0=",
+        "lastModified": 1767556971,
+        "narHash": "sha256-UW675qTeNvjV29REgN8CP6HIZKFKOlJOt+YKS4MMnJk=",
         "owner": "arabbitplays",
         "repo": "Desktop-Manager",
-        "rev": "7e3a2e7ad20dcd06f4835e22cce1270be3edc874",
+        "rev": "a4ad52760a609b216424b1d0aebae5c0f836d524",
         "type": "github"
       },
       "original": {
         "owner": "arabbitplays",
         "repo": "Desktop-Manager",
+        "type": "github"
+      }
+    },
+    "desktop-manager-cli": {
+      "inputs": {
+        "nixpkgs": "nixpkgs_2"
+      },
+      "locked": {
+        "lastModified": 1767553952,
+        "narHash": "sha256-gXygkmyk9lai3rxXlyBXSSFeRL1iJdDMNSEiezB0qGw=",
+        "owner": "arabbitplays",
+        "repo": "Desktop-Manager-CLI",
+        "rev": "705aa94220e351d9970723c8b176330aba850389",
+        "type": "github"
+      },
+      "original": {
+        "owner": "arabbitplays",
+        "repo": "Desktop-Manager-CLI",
         "type": "github"
       }
     },
@@ -53,6 +71,22 @@
       "locked": {
         "lastModified": 1767480499,
         "narHash": "sha256-8IQQUorUGiSmFaPnLSo2+T+rjHtiNWc+OAzeHck7N48=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "30a3c519afcf3f99e2c6df3b359aec5692054d92",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-25.11",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nixpkgs_3": {
+      "locked": {
+        "lastModified": 1767480499,
+        "narHash": "sha256-8IQQUorUGiSmFaPnLSo2+T+rjHtiNWc+OAzeHck7N48=",
         "owner": "nixos",
         "repo": "nixpkgs",
         "rev": "30a3c519afcf3f99e2c6df3b359aec5692054d92",
@@ -68,8 +102,9 @@
     "root": {
       "inputs": {
         "desktop-manager": "desktop-manager",
+        "desktop-manager-cli": "desktop-manager-cli",
         "nixCats": "nixCats",
-        "nixpkgs": "nixpkgs_2"
+        "nixpkgs": "nixpkgs_3"
       }
     }
   },

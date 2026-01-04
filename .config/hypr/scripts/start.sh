@@ -15,7 +15,7 @@ waybar &
 dunst &
 
 swww-daemon &
-~/.config/hypr/scripts/swww-rotating.sh &
+DesktopManagerCLI theme forest
 
 hyprctl dispatch workspace 11
 hyprctl dispatch workspace 21
