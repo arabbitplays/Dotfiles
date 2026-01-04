@@ -52,6 +52,14 @@ local function on_attach(_, bufnr)
 
     nmap('<leader>rn', vim.lsp.buf.rename, '[R]e[n]ame')
     nmap('<leader>ca', vim.lsp.buf.code_action, '[C]ode [A]ction')
+    vim.keymap.set("n", "<leader>ci", function()
+      vim.lsp.buf.code_action({
+        filter = function(action)
+          return action.kind == "quickfix"
+              or action.kind == "refactor"
+        end,
+      })
+    end, { desc = "LSP: Implement declaration" })
 
     nmap('gd', vim.lsp.buf.definition, '[G]oto [D]efinition')
     nmap('gr', require('telescope.builtin').lsp_references, '[G]oto [R]eferences')

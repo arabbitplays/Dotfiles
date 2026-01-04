@@ -18,7 +18,7 @@ in
         environment.systemPackages = with pkgs; [
             git
             jetbrains.clion
-            jetbrains.pycharm-community
+            jetbrains.pycharm
             perf
             perf-tools
             tracy

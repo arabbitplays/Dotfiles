@@ -1,8 +1,7 @@
-{ lib, config, pkgs, ... }:
+{ inputs, lib, config, pkgs, ... }:
 
 let
     module_dir = ../modules;
-    desktopManager = import ../services/desktop_manager.nix { inherit pkgs; };
 in
 {
     imports =
@@ -24,28 +23,40 @@ in
 
 
     programmingModule.enable = true;
-  musicModule.enable = true;
-  artModule.enable = true;
+    musicModule.enable = true;
+    artModule.enable = true;
 
-  postgresModule.enable = true;
-  dockerModule.enable = true;
-  minecraftModule.enable = true;
+    postgresModule.enable = true;
+    dockerModule.enable = true;
+    minecraftModule.enable = true;
 
-  hypr-desktop.enable = true;
-  networking.hostName = lib.mkForce "nix-desktop"; # Override your hostname.
+    hypr-desktop.enable = true;
+    networking.hostName = lib.mkForce "nix-desktop"; # Override your hostname.
 
-  environment.systemPackages = with pkgs; [
-    jetbrains.webstorm
-    jetbrains.idea-community
-    mongodb-compass
-    desktopManager
-  ];
+    systemd.user.services.desktop-manager = {
+        description = "Desktop Manager Daemon";
 
-  # Some programs need SUID wrappers, can be configured further or are
-  # started in user sessions.
-  # programs.mtr.enable = true;
-  # programs.gnupg.agent = {
-  #   enable = true;
-  #   enableSSHSupport = true;
-  # };
+        wantedBy = [ "default.target" ];
+        after = [ "graphical-session.target" ];
+
+        serviceConfig = {
+            ExecStart = "${inputs.desktop-manager.packages.${pkgs.stdenv.hostPlatform.system}.desktop-manager}/bin/DesktopManager";
+            Restart = "always";
+            RestartSec = 2;
+            RuntimeDirectory = "desktop-manager";
+
+            Environment = ''
+                PATH=/run/current-system/sw/bin:/run/current-system/sw/sbin:/usr/bin:/bin:${pkgs.coreutils}/bin
+                XDG_RUNTIME_DIR=${builtins.getEnv "XDG_RUNTIME_DIR"}
+                WAYLAND_DISPLAY=${builtins.getEnv "WAYLAND_DISPLAY"}
+            '';
+        };
+    };
+
+    environment.systemPackages = with pkgs; [
+        jetbrains.webstorm
+        jetbrains.idea
+        mongodb-compass
+    ];
+
 }

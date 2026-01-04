@@ -74,6 +74,7 @@ alias flake="~/Resources/Flakes/flake_selector.sh"
 
 alias cl="~/.install/clion.sh"
 alias pyc="~/.install/pycharm.sh"
+alias nvim="nvim --listen /tmp/nvim-$$_main"
 
 alias nedit="nvim ~/.nixos"
 alias cedit="nvim ~/.config"
