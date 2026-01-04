@@ -16,6 +16,7 @@ dunst &
 
 swww-daemon &
 DesktopManagerCLI theme forest
+DesktopManagerCLI workspace switch 1
 
 hyprctl dispatch workspace 11
 hyprctl dispatch workspace 21
