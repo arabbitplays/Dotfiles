@@ -39,6 +39,8 @@
 
       shellHook = ''
         echo "Entered dev env"
+        export SHELL=${pkgs.zsh}/bin/zsh
+        exec ${pkgs.zsh}/bin/zsh
       '';
     };
   };
