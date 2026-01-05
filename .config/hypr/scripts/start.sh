@@ -15,11 +15,10 @@ waybar &
 dunst &
 
 swww-daemon &
+
+systemctl --user restart desktop-manager.service
+
 DesktopManagerCLI theme forest
 DesktopManagerCLI workspace switch 1
-
-hyprctl dispatch workspace 11
-hyprctl dispatch workspace 21
-hyprctl dispatch workspace 31
 
 # nix-index &
