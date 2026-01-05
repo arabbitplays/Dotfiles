@@ -43,7 +43,7 @@
   },
   "custom/workspaces": {
       "name": "custom/workspaces",
-      "exec": "~/.config/hypr/scripts/workspaces.sh getindex",
+      "exec": "DesktopManagerCLI workspace getvirtidx | tail -n 1",
       "signal": 1,
       "interval": 1,
       "format": "{}",

@@ -25,6 +25,7 @@ in
             gcc
             vscode
             binutils # objdump and co
+            socat # unix socket utility
         ];
     };
 }

@@ -5,11 +5,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1767560607,
-        "narHash": "sha256-UH7muZQKZHoOCRi6bfDTJsJpc0AbTFQVMFhjf35ZOUY=",
+        "lastModified": 1767646824,
+        "narHash": "sha256-oVbvhTLOupgNC57F8AIze8bqb1QgnSRK8UENpGAJe+c=",
         "owner": "arabbitplays",
         "repo": "Desktop-Manager",
-        "rev": "711d7b0c24447d386863b39cd2a924b7e9c4575d",
+        "rev": "329b090c315f2a05a2613c94724f11c256c82e30",
         "type": "github"
       },
       "original": {
@@ -23,11 +23,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1767553952,
-        "narHash": "sha256-gXygkmyk9lai3rxXlyBXSSFeRL1iJdDMNSEiezB0qGw=",
+        "lastModified": 1767647131,
+        "narHash": "sha256-3IbO7rQcFQVvt/ewgMZfPJqk6X87wr6Jbvmr2iJWYGw=",
         "owner": "arabbitplays",
         "repo": "Desktop-Manager-CLI",
-        "rev": "705aa94220e351d9970723c8b176330aba850389",
+        "rev": "87d328c289723ca8fa580aedf4ad51f25d85fa71",
         "type": "github"
       },
       "original": {
