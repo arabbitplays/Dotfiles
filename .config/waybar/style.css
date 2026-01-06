@@ -1,8 +1,10 @@
+@import "current-theme.css";
+
 * {
     border: none;
     font-family: Font Awesome, Roboto, Arial, sans-serif;
     font-size: 13px;
-    color: #ffffff;
+    color: @text;
     border-radius: 20px;
 }
 
@@ -14,16 +16,16 @@ window#waybar {
 }
 /*-----module groups----*/
 .modules-right {
-	background-color: rgba(0,43,51,0.85);
+	background-color: @bg;
     margin: 2px 10px 0 0;
 }
 .modules-center {
-	background-color: rgba(0,43,51,0.85);
+	background-color: @bg;
     margin: 2px 0 0 0;
 }
 .modules-left {
     margin: 2px 0 0 5px;
-	background-color: rgba(0,43,51,0.85);
+	background-color: @bg;
 }
 /*-----modules indv----*/
 
