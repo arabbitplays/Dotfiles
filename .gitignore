@@ -1,6 +1,7 @@
 .cfg/
 
 .nixos/hardware-configuration.nix
+.nixos/certificates/
 
 .config/clipse/clipboard_history.json
 .config/clipse/clipse.log

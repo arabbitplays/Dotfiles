@@ -30,6 +30,7 @@ in {
           general = with pkgs; [
             clang-tools # clangd lsp
             lua-language-server
+            typescript-language-server
             ripgrep
             fd
             lazygit

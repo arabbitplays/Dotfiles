@@ -26,6 +26,12 @@ in
             vscode
             binutils # objdump and co
             socat # unix socket utility
+            openssl # ssl and tls protocols
+            nss # security libs
+        ];
+
+        security.pki.certificates = [
+            (builtins.readFile /home/oschdi/.nixos/certificates/devcert.pem)
         ];
     };
 }
