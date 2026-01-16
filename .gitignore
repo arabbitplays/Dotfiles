@@ -8,4 +8,5 @@
 .config/clipse/tmp_files/
 
 .config/nvim/current-theme
--config/kitty/current-theme.conf
+.config/kitty/current-theme.conf
+.config/waybar/current-theme.css
