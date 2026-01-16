@@ -37,6 +37,8 @@ in
         jetbrains.webstorm
         jetbrains.idea
         mongodb-compass
+        telegram-desktop
+        telegram-bot-api
     ];
 
 }

@@ -18,6 +18,7 @@
       modules = [
         ./systems/laptop_config.nix
         # inputs.home-manager.nixosModules.default
+        { _module.args.flakeRoot = self; }
       ];
     };
 
@@ -26,6 +27,7 @@
       modules = [
         ./systems/desktop_config.nix
         # inputs.home-manager.nixosModules.default
+        { _module.args.flakeRoot = self; }
       ];
     };
   };
