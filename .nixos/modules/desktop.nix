@@ -137,6 +137,7 @@
             usbutils # usb drive utils
             udiskie # disk auto mounter
             udisks # stuff for disk manipulation
+            gparted # partition manager
             jmtpfs # phone files access
             qalculate-qt # calculator
             libreoffice
