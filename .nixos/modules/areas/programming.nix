@@ -30,8 +30,8 @@ in
             nss # security libs
         ];
 
-        security.pki.certificates = [
-            (builtins.readFile /home/oschdi/.nixos/certificates/devcert.pem)
-        ];
+        # security.pki.certificates = [
+        #     (builtins.readFile /home/oschdi/.nixos/certificates/devcert.pem)
+        # ];
     };
 }

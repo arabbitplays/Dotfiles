@@ -140,6 +140,7 @@
             jmtpfs # phone files access
             qalculate-qt # calculator
             libreoffice
+            texliveMedium
             inputs.desktop-manager-cli.packages.${pkgs.stdenv.hostPlatform.system}.desktop-manager-cli
         ];
     };
