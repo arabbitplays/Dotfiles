@@ -31,6 +31,7 @@ in {
             clang-tools # clangd lsp
             lua-language-server
             typescript-language-server
+            pyright
             ripgrep
             fd
             lazygit

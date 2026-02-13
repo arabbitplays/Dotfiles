@@ -38,6 +38,20 @@ servers.clangd = {
   },
 }
 
+servers.pyright = {
+  settings = {
+    python = {
+      analysis = {
+        typeCheckingMode = "basic", -- or "strict"
+        autoSearchPaths = true,
+        useLibraryCodeForTypes = true,
+        diagnosticMode = "workspace",
+      },
+    },
+  },
+  filetypes = { "python" },
+}
+
 servers.ts_ls = {
     settings = {
         typescript = {
