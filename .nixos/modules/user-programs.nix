@@ -16,6 +16,7 @@
         drawio
         cmatrix
         pipes
+        wget
     ];
 
     fonts.packages = with pkgs; [
