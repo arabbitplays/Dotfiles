@@ -29,6 +29,7 @@ in {
         lspsAndRuntimeDeps = {
           general = with pkgs; [
             clang-tools # clangd lsp
+            csharp-ls
             lua-language-server
             typescript-language-server
             pyright

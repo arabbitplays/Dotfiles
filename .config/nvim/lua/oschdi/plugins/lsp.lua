@@ -38,6 +38,11 @@ servers.clangd = {
   },
 }
 
+servers.csharp_ls = {
+  cmd = { "csharp-ls" },
+  filetypes = { "cs" },
+}
+
 servers.pyright = {
   settings = {
     python = {
