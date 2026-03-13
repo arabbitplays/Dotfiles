@@ -33,6 +33,8 @@ in
     hypr-desktop.enable = true;
     networking.hostName = lib.mkForce "nix-desktop"; # Override your hostname.
 
+    programs.nix-ld.enable = true;
+
     environment.systemPackages = with pkgs; [
         jetbrains.webstorm
         jetbrains.idea
