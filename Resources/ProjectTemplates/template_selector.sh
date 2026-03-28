@@ -24,10 +24,16 @@ select dir in "${dirs[@]}"; do
   if [[ -n "$dir" ]]; then
     echo "You selected: $dir"
     read -rp "Enter project name: " PROJECT_NAME
-    cp -rv "$SOURCE_DIR/$dir/." "$CURRENT_DIR/"
+    cp -r "$SOURCE_DIR/$dir/." "$CURRENT_DIR/"
 
     # Replace [[ProjectName]] in all files
     find "$CURRENT_DIR" -type f -exec sed -i "s/\[\[ProjectName\]\]/$PROJECT_NAME/g" {} +
+
+    if [[ -d "$CURRENT_DIR/.git" ]]; then
+        git add $CURRENT_DIR
+        git commit -m "Added template $dir"
+        git push
+    fi
     break
   else
     echo "Invalid selection"
