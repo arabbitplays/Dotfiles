@@ -71,6 +71,7 @@ alias nu="sudo nix flake update --flake ~/.nixos"
 alias nd="nix develop .#default"
 
 alias flake="~/Resources/Flakes/flake_selector.sh"
+alias template="~/Resources/ProjectTemplates/template_selector.sh"
 
 alias cl="~/.install/clion.sh"
 alias pyc="~/.install/pycharm.sh"
