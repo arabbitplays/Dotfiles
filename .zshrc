@@ -79,9 +79,13 @@ alias pyc="~/.install/pycharm.sh"
 alias nedit="nvim ~/.nixos"
 alias cedit="nvim ~/.config"
 
+alias gs="git status"
+alias glg="git log --graph"
+alias glo="git log -graph --oneline"
 alias ga="git add ."
 alias gc="git commit -m"
 alias gp="git push"
+alias gpf="git push --force-with-lease"
 alias greset="git reset --hard HEAD"
 
 alias cmbd="cmake --build --preset debug"
