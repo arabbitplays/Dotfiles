@@ -23,12 +23,12 @@ in
 
 
     programmingModule.enable = true;
-    musicModule.enable = true;
-    artModule.enable = true;
+    musicModule.enable = false;
+    artModule.enable = false;
 
-    postgresModule.enable = true;
-    dockerModule.enable = true;
-    minecraftModule.enable = true;
+    postgresModule.enable = false;
+    dockerModule.enable = false;
+    minecraftModule.enable = false;
 
     hypr-desktop.enable = true;
     networking.hostName = lib.mkForce "nix-desktop"; # Override your hostname.
@@ -36,12 +36,12 @@ in
     programs.nix-ld.enable = true;
 
     environment.systemPackages = with pkgs; [
-        jetbrains.webstorm
-        jetbrains.idea
+        # jetbrains.webstorm
+        # jetbrains.idea
         jetbrains.rider
-        mongodb-compass
-        telegram-desktop
-        telegram-bot-api
+        # mongodb-compass
+        # telegram-desktop
+        # telegram-bot-api
     ];
 
 }

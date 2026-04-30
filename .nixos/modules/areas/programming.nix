@@ -18,10 +18,10 @@ in
         environment.systemPackages = with pkgs; [
             git
             jetbrains.clion
-            jetbrains.pycharm
-            perf
-            perf-tools
-            tracy
+            # jetbrains.pycharm
+            # perf
+            # perf-tools
+            # tracy
             gcc
             vscode
             binutils # objdump and co

@@ -69,6 +69,8 @@ alias nbl="sudo nixos-rebuild switch --flake ~/.nixos#laptop --impure"
 alias nbd="sudo nixos-rebuild switch --flake ~/.nixos#desktop --impure"
 alias nu="sudo nix flake update --flake ~/.nixos"
 alias nd="nix develop .#default"
+alias nc="sudo nix-collect-garbage -d"
+alias ncu="nix-collect-garbage -d"
 
 alias flake="~/Resources/Flakes/flake_selector.sh"
 alias template="~/Resources/ProjectTemplates/template_selector.sh"

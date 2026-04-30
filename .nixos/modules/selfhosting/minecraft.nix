@@ -36,7 +36,7 @@ in
         };
         
         environment.systemPackages = with pkgs; [
-
+            cowsay
         ];
     };
 }
