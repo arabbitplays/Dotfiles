@@ -26,8 +26,8 @@ in
     musicModule.enable = false;
     artModule.enable = false;
 
-    postgresModule.enable = false;
-    dockerModule.enable = false;
+    postgresModule.enable = true;
+    dockerModule.enable = true;
     minecraftModule.enable = false;
 
     hypr-desktop.enable = true;
