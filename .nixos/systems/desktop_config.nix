@@ -36,7 +36,7 @@ in
     programs.nix-ld.enable = true;
 
     environment.systemPackages = with pkgs; [
-        # jetbrains.webstorm
+        jetbrains.webstorm
         # jetbrains.idea
         jetbrains.rider
         # mongodb-compass

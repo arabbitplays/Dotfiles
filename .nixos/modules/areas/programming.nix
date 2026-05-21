@@ -15,9 +15,15 @@ in
             '';
         };
 
+        services.tailscale = {
+            enable = true;
+        };
+
         environment.systemPackages = with pkgs; [
+            tailscale
             git
             jetbrains.clion
+            insomnia
             # jetbrains.pycharm
             # perf
             # perf-tools
