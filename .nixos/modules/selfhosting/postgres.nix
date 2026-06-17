@@ -17,7 +17,13 @@ in
 
         services.postgresql = {
             enable = true;
-            ensureDatabases = [ "gamify-life" ];
+            ensureDatabases = [ "postgres" "gamify-life" "anarchy-chess" ];
+            ensureUsers = [
+                {
+                    name = "oschdi";
+                    ensureDBOwnership = false;
+                }
+            ];
             authentication = pkgs.lib.mkOverride 10 ''
                 #type database  DBuser  auth-method
                 local all all trust

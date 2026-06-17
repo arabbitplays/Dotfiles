@@ -5,9 +5,7 @@
     isNormalUser = true;
     description = "Jakob Ostermann";
     extraGroups = [ "networkmanager" "wheel" "audio" ];
-    packages = with pkgs; [
-    #  thunderbird
-    ];
+    packages = with pkgs; [ ];
   };
 
 }

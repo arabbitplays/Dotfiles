@@ -27,7 +27,7 @@ in
     artModule.enable = false;
 
     postgresModule.enable = true;
-    dockerModule.enable = true;
+    dockerModule.enable = false;
     minecraftModule.enable = false;
 
     hypr-desktop.enable = true;
@@ -36,7 +36,7 @@ in
     programs.nix-ld.enable = true;
 
     environment.systemPackages = with pkgs; [
-        jetbrains.webstorm
+        # jetbrains.webstorm
         # jetbrains.idea
         jetbrains.rider
         claude-code
