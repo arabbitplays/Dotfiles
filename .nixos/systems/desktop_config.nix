@@ -39,6 +39,7 @@ in
         # jetbrains.webstorm
         # jetbrains.idea
         jetbrains.rider
+        jetbrains.pycharm
         claude-code
         gurobi
         scribus
