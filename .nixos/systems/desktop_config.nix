@@ -39,7 +39,6 @@ in
         # jetbrains.webstorm
         # jetbrains.idea
         jetbrains.rider
-        claude-code
         gurobi
         scribus
         # mongodb-compass

@@ -10,12 +10,10 @@
         discord
         signal-desktop
         spotify
+        claude-code
         prismlauncher
-        scribus
         obs-studio
         drawio
-        cmatrix
-        pipes
         wget
     ];
 
