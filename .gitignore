@@ -3,6 +3,8 @@
 .nixos/hardware-configuration.nix
 .nixos/certificates/
 
+.config/hypr/config/outputs.conf
+
 .config/clipse/clipboard_history.json
 .config/clipse/clipse.log
 .config/clipse/tmp_files/
