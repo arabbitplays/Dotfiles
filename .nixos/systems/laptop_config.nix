@@ -52,6 +52,7 @@ in
     environment.systemPackages = with pkgs; [
         anki   
         ghostscript
+        gimp
     ];
     nixCats.enable = true;
 
