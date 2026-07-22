@@ -18,6 +18,13 @@
         services.gvfs.enable = true;
         services.udisks2.enable = true;
 
+        # gnome-keyring stores the ssh key passphrase after the first ssh-add,
+        # then unlocks automatically on login via PAM. Its ssh-agent socket
+        # sits at $XDG_RUNTIME_DIR/keyring/ssh — exported into services below.
+        services.gnome.gnome-keyring.enable = true;
+        security.pam.services.gdm-password.enableGnomeKeyring = true;
+        security.pam.services.login.enableGnomeKeyring = true;
+
         programs.hyprland = {
             enable = true;
             xwayland.enable = true;
@@ -99,6 +106,7 @@
                     PATH=/run/current-system/sw/bin:/run/current-system/sw/sbin:/usr/bin:/bin:${pkgs.coreutils}/bin
                     XDG_RUNTIME_DIR=${builtins.getEnv "XDG_RUNTIME_DIR"}
                     WAYLAND_DISPLAY=${builtins.getEnv "WAYLAND_DISPLAY"}
+                    SSH_AUTH_SOCK=%t/keyring/ssh
                 '';
             };
         };
