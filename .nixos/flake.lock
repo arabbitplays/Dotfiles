@@ -5,11 +5,11 @@
         "nixpkgs": "nixpkgs"
       },
       "locked": {
-        "lastModified": 1767726331,
-        "narHash": "sha256-bFBT+Xip6r4VK0bM5LID1d5fah2PO++QqcHDMWjXP5I=",
+        "lastModified": 1784683948,
+        "narHash": "sha256-fkdSjdsQcRm6vafabUM2oGeaEo0I0Jvm0HTKgmW1LFg=",
         "owner": "arabbitplays",
         "repo": "Desktop-Manager",
-        "rev": "ac43485a3a7b7b81536fcb45d884fdef07c41636",
+        "rev": "956e000f703ac3d3629eb114a23949c55df4cb2a",
         "type": "github"
       },
       "original": {
