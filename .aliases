@@ -33,7 +33,7 @@ alias cmbd="cmake --build --preset debug"
 alias cmbr="cmake --build --preset release"
 
 alias config="git --git-dir=$HOME/.cfg/ --work-tree=$HOME"
-alias sync="~/.install/sync.sh"
+alias sync="DesktopManagerCLI sync all"
 
 alias mcstatus="systemctl status minecraft-server.service"
 alias vpn="sudo openvpn --config Resources/kit.ovpn "
