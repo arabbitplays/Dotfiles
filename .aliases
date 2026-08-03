@@ -9,8 +9,7 @@ alias nd="nix develop .#default"
 alias nc="sudo nix-collect-garbage -d"
 alias ncu="nix-collect-garbage -d"
 
-alias flake="~/Resources/Flakes/flake_selector.sh"
-alias template="~/Resources/ProjectTemplates/template_selector.sh"
+alias template="~/Resources/Flakes/project_template_selector.sh"
 
 alias cl="~/.install/clion.sh"
 alias pyc="~/.install/pycharm.sh"
