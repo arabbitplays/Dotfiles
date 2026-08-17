@@ -7,11 +7,11 @@
         "terminal-renderer-src": "terminal-renderer-src"
       },
       "locked": {
-        "lastModified": 1786989129,
-        "narHash": "sha256-CCfDdw1wZDD6SU9qxfWu2osy7HDrKELBcU2MfhQAsAc=",
+        "lastModified": 1786994121,
+        "narHash": "sha256-+DzYGUUQgTuiwKBAdOmNFOcAO86I9usFW/hZOAJ+SRY=",
         "owner": "arabbitplays",
         "repo": "Desktop-Manager",
-        "rev": "af6a560783d118f03a07fb29f9a415c11493442f",
+        "rev": "d3a02d08a619581be7dfda0ee55facca6a7d5c21",
         "type": "github"
       },
       "original": {
@@ -128,11 +128,11 @@
     "terminal-renderer-src": {
       "flake": false,
       "locked": {
-        "lastModified": 1786986476,
-        "narHash": "sha256-AhsCXMsJ9dHDcCbqDc8eftMz98I1vwbhm5YXis19Ljg=",
+        "lastModified": 1786992652,
+        "narHash": "sha256-1Wt/ZQVuYOj2KBudx7Y4KTYR0h16wL60A6AZgHMjiQA=",
         "owner": "arabbitplays",
         "repo": "Terminal-Renderer-Library",
-        "rev": "eee32a85d0d55b706b8ac9785ceea8c926a7685a",
+        "rev": "ff859ef640d18580720c4f90fb275048122b1a9a",
         "type": "github"
       },
       "original": {
