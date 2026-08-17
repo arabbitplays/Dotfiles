@@ -2,14 +2,16 @@
   "nodes": {
     "desktop-manager": {
       "inputs": {
-        "nixpkgs": "nixpkgs"
+        "logging-src": "logging-src",
+        "nixpkgs": "nixpkgs",
+        "terminal-renderer-src": "terminal-renderer-src"
       },
       "locked": {
-        "lastModified": 1785274986,
-        "narHash": "sha256-pbtUt1fa86lf9cSy3mK5h7Dt1v7L3JaVOxPt02hjCkk=",
+        "lastModified": 1786988507,
+        "narHash": "sha256-DtbUyRdUJwvQZ6KL8nf7zHrHIzNH69MWYniuUvHqoRU=",
         "owner": "arabbitplays",
         "repo": "Desktop-Manager",
-        "rev": "5facdfe3f6678f5bfd5ac89de384b640fe26e6fc",
+        "rev": "6ce184049dba4573c59dc8c08b70f36169dd9910",
         "type": "github"
       },
       "original": {
@@ -33,6 +35,22 @@
       "original": {
         "owner": "arabbitplays",
         "repo": "Desktop-Manager-CLI",
+        "type": "github"
+      }
+    },
+    "logging-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1786984754,
+        "narHash": "sha256-e83CaeqRQrp1iTpHoIC28u3ib1cIOEGQgRD3jnCL2x0=",
+        "owner": "arabbitplays",
+        "repo": "Logging-Library",
+        "rev": "52edf42f20103e9f164eb634f557fe6b8c17fd93",
+        "type": "github"
+      },
+      "original": {
+        "owner": "arabbitplays",
+        "repo": "Logging-Library",
         "type": "github"
       }
     },
@@ -105,6 +123,22 @@
         "desktop-manager-cli": "desktop-manager-cli",
         "nixCats": "nixCats",
         "nixpkgs": "nixpkgs_3"
+      }
+    },
+    "terminal-renderer-src": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1786986476,
+        "narHash": "sha256-AhsCXMsJ9dHDcCbqDc8eftMz98I1vwbhm5YXis19Ljg=",
+        "owner": "arabbitplays",
+        "repo": "Terminal-Renderer-Library",
+        "rev": "eee32a85d0d55b706b8ac9785ceea8c926a7685a",
+        "type": "github"
+      },
+      "original": {
+        "owner": "arabbitplays",
+        "repo": "Terminal-Renderer-Library",
+        "type": "github"
       }
     }
   },
