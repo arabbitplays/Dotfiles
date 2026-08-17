@@ -7,11 +7,11 @@
         "terminal-renderer-src": "terminal-renderer-src"
       },
       "locked": {
-        "lastModified": 1786988507,
-        "narHash": "sha256-DtbUyRdUJwvQZ6KL8nf7zHrHIzNH69MWYniuUvHqoRU=",
+        "lastModified": 1786989129,
+        "narHash": "sha256-CCfDdw1wZDD6SU9qxfWu2osy7HDrKELBcU2MfhQAsAc=",
         "owner": "arabbitplays",
         "repo": "Desktop-Manager",
-        "rev": "6ce184049dba4573c59dc8c08b70f36169dd9910",
+        "rev": "af6a560783d118f03a07fb29f9a415c11493442f",
         "type": "github"
       },
       "original": {
