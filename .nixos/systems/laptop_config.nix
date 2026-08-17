@@ -23,6 +23,8 @@ in
     programmingModule.enable = true;
     musicModule.enable = true;
 
+    postgresModule.enable = true;
+
     hypr-desktop.enable = true;
     networking.hostName = lib.mkForce "nix-laptop"; # Override your hostname.
 
