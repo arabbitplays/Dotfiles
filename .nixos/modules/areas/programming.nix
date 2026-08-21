@@ -24,6 +24,7 @@ in
             git
             jetbrains.clion
             insomnia
+            claude-code
             # jetbrains.pycharm
             # perf
             # perf-tools

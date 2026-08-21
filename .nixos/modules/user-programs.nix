@@ -10,7 +10,6 @@
         discord
         signal-desktop
         spotify
-        claude-code
         prismlauncher
         obs-studio
         drawio
