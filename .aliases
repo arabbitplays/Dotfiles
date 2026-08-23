@@ -27,6 +27,7 @@ alias gpf="git push --force-with-lease"
 alias gr="git reset"
 alias grh="git reset --hard"
 alias gri="git rebase --interactive"
+alias grc="git rebase --continue"
 
 alias cmbd="cmake --build --preset debug"
 alias cmbr="cmake --build --preset release"
