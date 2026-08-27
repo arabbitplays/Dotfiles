@@ -16,6 +16,7 @@ in
         };
 
         virtualisation.docker.enable = true;
+        virtualisation.docker.package = pkgs.docker_29;
         users.users.oschdi.extraGroups = [ "docker" ];
         
         environment.systemPackages = with pkgs; [

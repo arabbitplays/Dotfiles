@@ -27,7 +27,7 @@ in
     artModule.enable = false;
 
     postgresModule.enable = true;
-    dockerModule.enable = false;
+    dockerModule.enable = true;
     minecraftModule.enable = false;
 
     hypr-desktop.enable = true;
