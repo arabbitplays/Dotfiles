@@ -24,7 +24,7 @@ in
 
     programmingModule.enable = true;
     musicModule.enable = false;
-    artModule.enable = false;
+    artModule.enable = true;
 
     postgresModule.enable = true;
     dockerModule.enable = true;
@@ -40,9 +40,6 @@ in
         # jetbrains.idea
         jetbrains.rider
         jetbrains.pycharm
-        claude-code
-        gurobi
-        scribus
         # mongodb-compass
         # telegram-desktop
         # telegram-bot-api

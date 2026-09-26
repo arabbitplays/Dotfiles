@@ -19,6 +19,7 @@ in
             opentabletdriver
             krita
             libresprite
+            gimp
         ];
     };
 }
