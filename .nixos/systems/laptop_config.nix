@@ -64,7 +64,7 @@ virtualisation.virtualbox.host = {
     enableExtensionPack = true;
   };
 
-  users.users.deinbenutzername = {
+  users.users.oschdi = {
     isNormalUser = true;
     extraGroups = [ 
       "wheel"       # Für sudo-Rechte
