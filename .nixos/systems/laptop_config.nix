@@ -54,8 +54,23 @@ in
     environment.systemPackages = with pkgs; [
         anki   
         ghostscript
+        gparted       # Grafisches Tool zum Partitionieren/Formatieren
+        dosfstools    # Nötig, damit GParted/Linux FAT32 formatieren kann
     ];
     nixCats.enable = true;
+
+virtualisation.virtualbox.host = {
+    enable = true;
+    enableExtensionPack = true;
+  };
+
+  users.users.deinbenutzername = {
+    isNormalUser = true;
+    extraGroups = [ 
+      "wheel"       # Für sudo-Rechte
+      "vboxusers"   # WICHTIG: Erlaubt VirtualBox den Zugriff auf USB-Sticks
+    ];
+  };
 
     # Some programs need SUID wrappers, can be configured further or are
     # started in user sessions.
