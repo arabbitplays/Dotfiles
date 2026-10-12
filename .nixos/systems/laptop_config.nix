@@ -12,6 +12,7 @@ in
             "${module_dir}/users.nix"
             "${module_dir}/shell.nix"
             "${module_dir}/steam.nix"
+            "${module_dir}/virtual_machine.nix"
             "${module_dir}/user-programs.nix"
             "${module_dir}/networking.nix"
             "${module_dir}/nixcats.nix"
@@ -22,6 +23,7 @@ in
 
     programmingModule.enable = true;
     musicModule.enable = true;
+    virtualMachineModule.enable = true;
 
     postgresModule.enable = true;
 
@@ -33,7 +35,7 @@ in
 
     services.tlp = {
         enable = true;
-        settings = {
+       settings = {
             CPU_SCALING_GOVERNOR_ON_AC = "performance";
             CPU_SCALING_GOVERNOR_ON_BAT = "powersave";
 
@@ -54,23 +56,10 @@ in
     environment.systemPackages = with pkgs; [
         anki   
         ghostscript
-        gparted       # Grafisches Tool zum Partitionieren/Formatieren
-        dosfstools    # Nötig, damit GParted/Linux FAT32 formatieren kann
+        jetbrains.rider
     ];
     nixCats.enable = true;
 
-virtualisation.virtualbox.host = {
-    enable = true;
-    enableExtensionPack = true;
-  };
-
-  users.users.oschdi = {
-    isNormalUser = true;
-    extraGroups = [ 
-      "wheel"       # Für sudo-Rechte
-      "vboxusers"   # WICHTIG: Erlaubt VirtualBox den Zugriff auf USB-Sticks
-    ];
-  };
 
     # Some programs need SUID wrappers, can be configured further or are
     # started in user sessions.
