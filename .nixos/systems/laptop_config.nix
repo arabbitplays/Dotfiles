@@ -58,6 +58,31 @@ in
         jetbrains.pycharm
         unityhub
         vscode
+
+        go
+        gopls          # language server
+        gotools        # goimports etc.
+        delve          # debugger
+        golangci-lint
+
+        meson
+        pkg-config
+        gcc
+        cmake
+        ninja
+        python3
+
+        fontconfig
+        freetype
+        libGL
+        libx11
+        libxext
+        libxrender
+        libxi
+        libxrandr
+        libice
+        libsm 
+        dotnet-sdk_10
     ];
     nixCats.enable = true;
 

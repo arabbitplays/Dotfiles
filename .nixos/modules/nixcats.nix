@@ -32,6 +32,7 @@ in {
             csharp-ls
             lua-language-server
             typescript-language-server
+            gopls # go lsp
             pyright
             ripgrep
             fd
