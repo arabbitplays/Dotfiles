@@ -9,7 +9,7 @@ alias nd="nix develop .#default"
 alias nc="sudo nix-collect-garbage -d"
 alias ncu="nix-collect-garbage -d"
 
-alias template="~/Resources/Flakes/project_template_selector.sh"
+alias template="~/Resources/Project-Templates/project_template_selector.sh"
 
 alias cl="~/.install/clion.sh"
 alias pyc="~/.install/pycharm.sh"
@@ -43,3 +43,5 @@ alias gamify="~/Projects/Gamify-Life/buildDir/GamifyLife --config ~/Projects/Gam
 alias dps="docker ps -a"
 alias dcu="docker compose up"
 alias dcd="docker compose down"
+
+w() { readlink -f "$(which "$1")"; }

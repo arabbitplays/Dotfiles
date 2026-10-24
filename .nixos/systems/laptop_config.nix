@@ -26,6 +26,7 @@ in
     virtualMachineModule.enable = true;
 
     postgresModule.enable = true;
+    dockerModule.enable = false;
 
     hypr-desktop.enable = true;
     networking.hostName = lib.mkForce "nix-laptop"; # Override your hostname.
@@ -54,11 +55,19 @@ in
 
 
     environment.systemPackages = with pkgs; [
-        anki   
-        ghostscript
-        jetbrains.rider
+        jetbrains.pycharm
+        unityhub
+        vscode
     ];
     nixCats.enable = true;
+
+    services.mailpit.instances.default = {
+      # defaults: SMTP on 127.0.0.1:1025, web UI on 127.0.0.1:8025
+    };
+    services.postfix = {
+      enable = true;
+      settings.main.relayhost = [ "[127.0.0.1]:1025" ];
+    };
 
 
     # Some programs need SUID wrappers, can be configured further or are

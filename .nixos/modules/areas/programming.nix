@@ -23,6 +23,7 @@ in
             tailscale
             git
             jetbrains.clion
+            jetbrains.rider
             insomnia
             claude-code
             # jetbrains.pycharm

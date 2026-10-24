@@ -38,9 +38,7 @@ in
     environment.systemPackages = with pkgs; [
         # jetbrains.webstorm
         # jetbrains.idea
-        jetbrains.rider
         jetbrains.pycharm
-        # mongodb-compass
         # telegram-desktop
         # telegram-bot-api
     ];
