@@ -26,7 +26,7 @@ in
     virtualMachineModule.enable = true;
 
     postgresModule.enable = true;
-    dockerModule.enable = false;
+    dockerModule.enable = true;
 
     hypr-desktop.enable = true;
     networking.hostName = lib.mkForce "nix-laptop"; # Override your hostname.

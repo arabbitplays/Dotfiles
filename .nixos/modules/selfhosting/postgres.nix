@@ -17,11 +17,16 @@ in
 
         services.postgresql = {
             enable = true;
-            ensureDatabases = [ "postgres" "gamify-life" "anarchy-chess" ];
+            ensureDatabases = [ "postgres" "gamify-life" "anarchy-chess" "imagemanager" ];
             ensureUsers = [
                 {
                     name = "oschdi";
                     ensureDBOwnership = false;
+                }
+                {
+                    name = "imagemanager";
+                    ensureDBOwnership = true;
+                    ensureClauses.login = true;
                 }
             ];
             authentication = pkgs.lib.mkOverride 10 ''
