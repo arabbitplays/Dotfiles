@@ -26,7 +26,7 @@ in
             jetbrains.rider
             insomnia
             claude-code
-            gemini-cli
+            codex
             # jetbrains.pycharm
             # perf
             # perf-tools

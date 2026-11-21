@@ -8,4 +8,8 @@
     packages = with pkgs; [ ];
   };
 
+    nix.settings = {
+      trusted-users = [ "root" "@wheel" ];
+    };
+
 }
