@@ -23,10 +23,10 @@ in
 
     programmingModule.enable = true;
     musicModule.enable = true;
-    virtualMachineModule.enable = true;
+    virtualMachineModule.enable = false;
 
     postgresModule.enable = true;
-    dockerModule.enable = true;
+    dockerModule.enable = false;
 
     hypr-desktop.enable = true;
     networking.hostName = lib.mkForce "nix-laptop"; # Override your hostname.
@@ -55,8 +55,8 @@ in
 
 
     environment.systemPackages = with pkgs; [
-        jetbrains.pycharm
-        unityhub
+        #jetbrains.pycharm
+        #unityhub
         vscode
 
         go
