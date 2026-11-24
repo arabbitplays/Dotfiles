@@ -33,6 +33,7 @@ in {
             lua-language-server
             typescript-language-server
             gopls # go lsp
+            go # required by gopls
             pyright
             ripgrep
             fd

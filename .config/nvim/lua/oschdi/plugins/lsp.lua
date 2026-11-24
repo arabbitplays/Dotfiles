@@ -43,6 +43,18 @@ servers.csharp_ls = {
   filetypes = { "cs" },
 }
 
+servers.gopls = {
+  settings = {
+    gopls = {
+      analyses = {
+        unusedparams = true,
+      },
+      usePlaceholders = true,
+    },
+  },
+  filetypes = { "go", "gomod", "gowork", "gotmpl" },
+}
+
 servers.pyright = {
   settings = {
     python = {

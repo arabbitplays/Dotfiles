@@ -16,5 +16,6 @@ require("oschdi.plugins.indent-lines")
 -- require("oschdi.lazy_init")
 
 require("oschdi.templates")
+require("oschdi.format")
 require("oschdi.set")
 require("oschdi.remap")
